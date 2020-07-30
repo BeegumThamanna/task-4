@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bulb</title>
+<style>
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color:white;
+}
+
+.flex-container>div {
+  background-color: white;
+  color: white;
+  width: 400px;
+  height: 400px;
+ 
+}
+img.a{
+
+
+  margin-left: 25%;
+}
+
+
+.button{
+    
+    margin-left: 20%;
+    
+    
+
+}
+
+
+</style>
+<script>
+ function trybulb(id)
+ {
+   var b=document.getElementById('a');
+   
+       if  (b.src === "https://i.dailymail.co.uk/i/pix/2014/01/26/article-2546363-1AFB247500000578-934_306x423.jpg")
+       {  
+           b.src =  "https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3-320-80.jpg";
+            id.innerHTML = "OFF";
+
+  
+       }
+ 
+        else
+         {
+            b.src="https://i.dailymail.co.uk/i/pix/2014/01/26/article-2546363-1AFB247500000578-934_306x423.jpg";
+            id.innerHTML = "ON";
+         }
+
+
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<div class="flex-container">
+  <div>
+  
+ 
+     
+           <img id="a" src="https://i.dailymail.co.uk/i/pix/2014/01/26/article-2546363-1AFB247500000578-934_306x423.jpg"  width="200" height="250"             ><br>
+
+           <div class="button">
+            <button onclick  = "trybulb(this)"> ON</button> 
+           </div>
+               
+      
+  
+  
+  
+  </div>
+</div>
+
+</body>
+</html>
